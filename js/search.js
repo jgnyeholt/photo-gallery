@@ -1,16 +1,16 @@
-$ = document;
-
-const searchBox = $.getElementById("searchBox");
-const searchHeader = $.getElementsByClassName("searchHeader");
-const searchCaption = $.getElementsByClassName("searchCaption");
-const searchGroup = $.getElementsByClassName("searchGroup");
+const searchBox = document.getElementById("searchBox");
+const searchHeader = document.getElementsByClassName("searchHeader");
+const searchCaption = document.getElementsByClassName("searchCaption");
+const searchGroup = document.getElementsByClassName("searchGroup");
 
 searchBox.onkeyup = search;
 
 function search(){
-
 	var searchText = searchBox.value.toLowerCase();
+	compareText(searchText);
+} //end search
 
+function compareText(searchText){
 	for(var i = 0; i < searchGroup.length; i++){
 		var text = searchHeader[i].innerText.toLowerCase();
 		var caption = searchCaption[i].innerText.toLowerCase();
@@ -22,4 +22,4 @@ function search(){
 			searchGroup[i].style.display = "none";
 		}
 	} //end for loop
-} //end search
+} //end compareText
