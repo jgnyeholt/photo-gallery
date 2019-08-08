@@ -5,9 +5,6 @@ const searchHeader = $.getElementsByClassName("searchHeader");
 const searchCaption = $.getElementsByClassName("searchCaption");
 const searchGroup = $.getElementsByClassName("searchGroup");
 
-let hidden;
-let visibile;
-
 searchBox.onkeyup = search;
 
 function search(){
