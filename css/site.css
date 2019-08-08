@@ -3,11 +3,17 @@
   margin: 2em auto;
 }
 
+.searchGroup{
+  display: inherit;
+}
+
 .search input {
   width: 100%;
   padding: 1em;
   border-radius: 5px;
-  border: 2px solid lightgray;
+  border: 2px solid rgba(0,0,0,.3);
+  font-size: 16pt;
+    font-family: sans-serif;
 }
 
 .photo-container {
@@ -20,4 +26,16 @@
 
 .photo-container a {
   margin: 2em;
+}
+
+@media (min-width: 800px){
+  .search {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1100px){
+  .search{
+    width: 40%;
+  }
 }
