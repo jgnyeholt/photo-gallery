@@ -7,6 +7,11 @@
   display: inherit;
 }
 
+.initial {
+  opacity: 1;
+  display: inherit;
+}
+
 .search input {
   width: 100%;
   padding: 1em;
